@@ -1,9 +1,8 @@
 {
-    "name": "beryllium/sculpin-tailwind-landing-skeleton",
-    "description": "Skeleton for Sculpin-based landing page websites",
-    "homepage": "https://whateverthing.com",
-    "keywords": ["sculpin", "sculpin-skeleton"],
-    "license": "MIT",
+    "name": "beryllium/vidz",
+    "description": "Landing page for vidz.ca",
+    "homepage": "https://vidz.ca",
+    "keywords": ["sculpin"],
     "authors": [
         {
             "name": "Kevin Boyd",
@@ -12,7 +11,7 @@
         }
     ],
     "require": {
-        "sculpin/sculpin": "^3.1"
+        "sculpin/sculpin": "dev-4.0.x-dev"
     },
     "scripts": {
         "publish": [
@@ -29,5 +28,10 @@
             "Composer\\Config::disableProcessTimeout",
             "yarn encore dev --watch"
         ]
+    },
+    "config": {
+        "allow-plugins": {
+            "sculpin/sculpin-theme-composer-plugin": true
+        }
     }
 }
